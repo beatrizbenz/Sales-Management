@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="formas_de_pagamento">
+        <item>@string/debito</item>
+        <item>@string/credito</item>
+        <item>@string/pix</item>
+    </string-array>
+</resources>

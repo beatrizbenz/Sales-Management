@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view_controle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Gestao_De_Brigadeiros.DadosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNomeCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/nome_completo" />
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:inputType="textPersonName|textCapWords" />
+
+        <CheckBox
+            android:id="@+id/cbClienteEspecial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/cliente_especial" />
+
+        <TextView
+            android:id="@+id/textViewNovaFormaDePagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/telefone" />
+
+        <EditText
+            android:id="@+id/editTextTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:inputType="number|phone" />
+
+        <TextView
+            android:id="@+id/textViewNovaPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/pagamento" />
+
+        <EditText
+            android:id="@+id/editTextPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:inputType="number|phone" />
+        <TextView
+            android:id="@+id/textViewClassificacaoDoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/selecione_a_classificacao_cliente" />
+
+        <RadioGroup
+            android:id="@+id/rgClassificacaoDoCliente"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAluno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aluno" />
+
+            <RadioButton
+                android:id="@+id/rbFuncionario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/funcionario" />
+
+            <RadioButton
+                android:id="@+id/rbComunidadeExterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comunidade_externa" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewDataDoPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/data_pagamento" />
+
+        <EditText
+            android:id="@+id/editTextDataDoPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textViewFormaDePagmento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/selecione_forma_de_pagamento" />
+
+        <Spinner
+            android:id="@+id/sp_FormaDePagamento"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/textViewDataDaVenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/data_ordem_venda" />
+
+        <EditText
+            android:id="@+id/editTextDataDaVenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+</ScrollView>
